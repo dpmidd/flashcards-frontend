@@ -1,0 +1,14 @@
+<section class="create-title">
+  {{textarea placeholder="Add a title!" value=cardTitle}}
+  {{cardTitle}}
+</section>
+
+<section class="create-post">
+  {{textarea placeholder="Add the back to your flashcard!" value=cardBack}}
+  <button class="savebutton" {{action 'newPost'}}>Save Flashcard</button>
+  <div class="notetext">
+    {{cardBack}}
+  </div>
+</section>
+
+{{outlet}}
