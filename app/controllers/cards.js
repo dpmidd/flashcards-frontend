@@ -7,8 +7,13 @@ export default Ember.ArrayController.extend({
       var back = this.get('cardBack');
       var card = this.store.createRecord('card', {title: title, back: back});
       this.set('cardTitle', '');
-      this.set('postTitle', '');
+      this.set('cardBack', '');
       card.save();
+    },
+    deleteCard: function(card) {
+      card.destroyRecord();
+      card.save();
+      this.transitionToRoute('cards');
     }
   }
 });
