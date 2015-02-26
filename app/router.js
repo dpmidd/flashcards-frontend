@@ -7,6 +7,9 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('cards', {path:'/cards'}, function () {
+    this.resource('card', {path:'/:card_id'}, function () {
+      this.route('edit', {path:'/edit'});
+    });
   });
 });
 
