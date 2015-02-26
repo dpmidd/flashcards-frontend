@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('cards', {path:'/cards'}, function () {
   });
+
 });
 
 export default Router;

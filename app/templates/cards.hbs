@@ -15,6 +15,7 @@
 {{#each card in model}}
   <h2>{{card.title}}</h2>
   <button {{action 'deleteCard' card}}>Delete</button>
+  <button {{action 'editCard' card}}>Edit</button>
 {{/each}}
 </section>
 
