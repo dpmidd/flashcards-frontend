@@ -10,6 +10,5 @@ export default Ember.ObjectController.extend({
       card.save();
       this.transitionToRoute('cards');
     }
-
   }
 });

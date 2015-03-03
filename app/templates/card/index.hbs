@@ -1,7 +1,5 @@
-<h1>THIS IS THE INDEX</h1>
-
 <section class="create-card">
   {{textarea value=title}}
   {{textarea value=back}}
-  <button class="savebutton" {{action 'editCard'}}>Update Flashcard</button>
+  <button {{action 'editCard' this}}>Update Flashcard</button>
 </section>

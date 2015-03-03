@@ -10,10 +10,8 @@ export default Ember.ObjectController.extend({
       this.set('cardBack', '');
       card.save();
     },
-
     deleteCard: function(card) {
       card.destroyRecord();
-      
       this.transitionToRoute('cards');
     }
   }
