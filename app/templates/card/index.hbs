@@ -1,5 +1,7 @@
-<section class>
-  {{textarea value=title}}
-  {{textarea value=back}}
-  <button {{action 'editCard' this}}>Update Flashcard</button>
+<section class="front">
+    {{textarea value=title}}
+  <section class="back">
+    {{textarea value=back}}
+  </section>
+  <button class="edit-button" {{action 'editCard' this}}>Update Flashcard</button>
 </section>
