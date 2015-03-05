@@ -1,19 +1,23 @@
-<section class="front">
-  {{textarea placeholder="Add a title!" value=cardTitle}}
-  {{cardTitle}}
-  {{cardBack}}
-</section>
+<section class="the-form">
+  <section class="front">
+    {{textarea placeholder="Add a title!" value=cardTitle}}
+    {{cardTitle}}
+    {{cardBack}}
+  </section>
 
-<div class="back">
-  {{textarea placeholder="Add the back to your flashcard!" value=cardBack}}
-  <button class="savebutton" {{action 'newCard'}}>Save</button>
-</div>
+  <div class="back">
+    <section class="textarea-back">
+      {{textarea placeholder="Add the back to your flashcard!" value=cardBack}}
+    </section>
+    <button class="savebutton" {{action 'newCard'}}>Save</button>
+  </div>
+</section>
 
   {{#each card in model}}
   <div class="notecard">
     <h2 class="title">{{#link-to 'card' card}}{{card.title}}{{/link-to}}</h2>
-    <h4>{{card.back}}</h4>
-    <button class="deletebutton" {{action 'deleteCard' card}}>Delete</button>
+    <button class="deletebutton" {{action 'deleteCard' card}}>X</button>
+    <h4 class="notecard-back">{{card.back}}</h4>
   </div>
   {{/each}}
 
