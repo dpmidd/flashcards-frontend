@@ -16,18 +16,29 @@ html, body {
 }
 
 .savebutton {
-  width: 10%;
-  display:block;
-  background:#EAF8BF;
-  padding:2em;
-  border-radius: 2px;
-  margin-bottom: 20px;
+  color: white;
+  background-color: #001D4A;
+  font-weight: bold;
+  padding: 8px 25px 8px 25px;
+  margin-left: 5px;
+  margin-top: 50px;
+  font-family: 'Arvo', serif;
+  border-radius: 4px;
+  border: solid 0 #e3edf4;
 }
 
 .deletebutton {
-  background:red;
-  display:block;
-  float: right;
+  color: white;
+  background-color: red;
+  background: red;
+  font-weight: bold;
+  padding: 8px 25px 8px 25px;
+  font-family: 'Arvo', serif;
+  margin-left: 5px;
+  margin-top: 50px;
+  font-family: Arial,sans-serif;
+  border-radius: 4px;
+  border: solid 0 #e3edf4;
 }
 
 a:visited {
@@ -39,8 +50,9 @@ a:visited {
 }
 
 .notecard {
+  margin-left: 5px;
   display: inline-block;
-  background-color: yellow;
+  background-color: #EAF8BF;
   width: 300px;
   height: 300px;
   border: 1px solid black;
