@@ -6,7 +6,7 @@
 
 html, body {
   background-color:#006992;
-
+  @include span(8 of 8);
 }
 
 a:visited {
@@ -15,4 +15,13 @@ a:visited {
 
 .title {
   text-align:center;
+}
+
+.front {
+  @include span(3 of 8);
+  margin-left: span(1 of 8);
+}
+
+.back {
+  @include span(3 of 8);
 }
