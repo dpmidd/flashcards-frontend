@@ -16,13 +16,17 @@ html, body {
 }
 
 .savebutton {
-  color:white;
-  background: none;
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 5px;
-  margin-bottom: 20px;
+  margin-right:5px;
+  color: white;
+  background: #006992;
+  font-weight: bold;
+  padding: 8px 25px 8px 25px;
   font-family: 'Arvo', serif;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-family: Arial,sans-serif;
+  border-radius: 4px;
+  border: solid 0 #e3edf4;
 }
 
 .deletebutton {
@@ -41,14 +45,6 @@ html, body {
   border: solid 0 #e3edf4;
 }
 
-a {
-  color:inherit;
-}
-
-a:visited {
-  color:black;
-}
-
 .title {
   text-align:center;
   font-size:32px;
@@ -61,7 +57,9 @@ a:visited {
 }
 
 .notecard {
-  margin-left: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
   display: inline-block;
   background-color: #EAF8BF;
   width: 300px;
@@ -76,6 +74,25 @@ a:visited {
 .notecard-back {
   margin-left:5px;
   word-wrap:break-word;
+}
+
+.edit-link {
+  color:blue;
+  margin-left:5px;
+  margin-top:10px;
+}
+
+.new-page-link {
+  color:white;
+  margin-left:10px;
+}
+
+a {
+  color:inherit;
+}
+
+a:visited {
+  color:black;
 }
 
 textarea {
