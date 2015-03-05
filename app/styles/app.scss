@@ -41,12 +41,23 @@ html, body {
   border: solid 0 #e3edf4;
 }
 
+a {
+  color:inherit;
+}
+
 a:visited {
   color:black;
 }
 
 .title {
   text-align:center;
+  font-size:32px;
+  color:white;
+}
+
+.card-title {
+  text-align:center;
+  word-wrap:break-word;
 }
 
 .notecard {
@@ -60,6 +71,11 @@ a:visited {
   -moz-border-radius: 4px;
   border-radius: 4px;
   margin-top: 10px;
+}
+
+.notecard-back {
+  margin-left:5px;
+  word-wrap:break-word;
 }
 
 textarea {
