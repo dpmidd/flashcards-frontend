@@ -15,8 +15,8 @@
 
   {{#each card in model}}
   <div class="notecard">
-    <h2 class="title">{{#link-to 'card' card}}{{card.title}}{{/link-to}}</h2>
     <button class="deletebutton" {{action 'deleteCard' card}}>X</button>
+    <h2 class="title">{{#link-to 'card' card}}{{card.title}}{{/link-to}}</h2>
     <h4 class="notecard-back">{{card.back}}</h4>
   </div>
   {{/each}}
